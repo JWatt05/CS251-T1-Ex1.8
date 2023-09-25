@@ -1,25 +1,18 @@
 public class Main {
     public static void main(String[] args) {
        //System.out.println("Hello world!");
-        isMultiple();
+        boolean x = isMultiple(14,7);
+        System.out.println(x);
     }
 
-    private static long n = 7;
-    private static long m = 14;
-    private static boolean result;
+    public static boolean isMultiple(long n, long m){
 
-
-    public static void isMultiple(){
-
-        if (m % n == 0)
-        {
-            result = true;
+        if (n % m == 0){
+            return true;
         }
 
         else{
-            result = false;
-        }
-            System.out.println(result);
-        }
-
+            return false;
+       }
     }
+}
